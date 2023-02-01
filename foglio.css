@@ -1,0 +1,167 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lora', serif;
+    font-size: 120%;
+    background: #eaeaea;
+    background-image: url('https://source.unsplash.com/random/1600x900/?landscape')
+    
+}
+
+.titolo {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #efecec;
+
+}
+
+
+.wrapper-2  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.card {
+    display: flex;
+    background: #eaeaea;
+    color: #524d4d;
+    padding: 2em;
+    border-radius: 30px;
+    width: 150%;
+    max-width: 420px;
+    margin: 1em;
+    height: 69%;
+    flex-direction: column;
+}
+
+.search {
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+filter: brightness(0.5);
+}
+
+button {
+    margin: 0.5em;
+    border: none;
+    border-radius: 50%;
+    height: 2.5em;
+    width: 2.5em;
+    background-color: bisque;
+}
+
+.card2 {
+    
+    display: flex;
+    background: #eaeaea;
+    color: #524d4d;
+    padding: 2em;
+    border-radius: 30px;
+   
+    
+    
+   
+}
+
+
+
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.8em;
+    border-radius: 18px;
+    background-color: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 120%;
+    width: calc(100% - 100px);
+}
+
+button:hover {
+    background: rgb(63, 111, 111);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+
+
+.weather.loading {
+    opacity: unset;
+    accent-color: darkgrey;
+}
+
+.belowpage {
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    content-visibility: auto;
+    color: black;
+    background-color: rgb(243, 251, 242);
+    
+}
+
+
+
+.wrapper {
+    position: relative;
+}
+
+.wrapper :is(.btn, .link) {
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    color: #151515;
+    border-radius: 50%;
+
+}
+
+
+.btn {
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    transition: outline .25s;
+
+}
+
+.active.btn,
+.btn:hover{
+    outline: 5px solid #bb93fc;
+    outline-offset: -4px;
+}
+
+.item{
+    position: absolute;
+    list-style: none;
+    transition: transform .5s;
+    transition-delay:var(--d);
+
+}
+
+.wrapper.active .item:nth-child(1) {
+    transform: translateX(-65px);
+}
+
+
+.wrapper.active .item:nth-child(2) {
+    transform: translateY(-65px);
+}
+
+.wrapper.active .item:nth-child(3) {
+    transform: translateX(65px);
+}

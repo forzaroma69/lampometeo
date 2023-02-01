@@ -1,0 +1,10 @@
+{
+    "version" : 2,
+    "name" : "lampometeo",
+    "builds" : [
+        { "src" : "localhost.js", "use" : "@vercel/node"}
+    ],
+    "routes": [
+        { "src": "/(.*)", "dest":"/app.js"}
+    ]
+}
