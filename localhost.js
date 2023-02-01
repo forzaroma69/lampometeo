@@ -1,10 +1,12 @@
-var http = require('http');
-var fs = require('fs');
+const express = require("express")
+const path = require('path');
 
-http.createServer(function (req, res) {
-  fs.readFile('./Lampometeo.html', function(err, data) {
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    res.write(data);
-    res.end();
-  });
-}).listen(8080);
+const app = express();
+const port = process.env.PORT || 8080;
+
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, '/lampometeo.html'));
+});
+
+app.listen(port)
