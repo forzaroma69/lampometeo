@@ -1,5 +1,5 @@
 PeriodicWave.onclick = function (){
-    let apikey = '30578d96ab7b00d1059a81a0c4c74ef3';
+    let apikey = '';
     let città = document.getElementById('weath').value;
     let uri = 'https://api.openweathermap.org/data/2.5/weather?q='+ città + '&appid=' +apikey;
     console.log(uri);
