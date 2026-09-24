@@ -1,6 +1,6 @@
 function info() {
     let città = document.getElementById("weath").value
-    let apikey = '30578d96ab7b00d1059a81a0c4c74ef3'
+    let apikey = ''
     let risultato = document.getElementById("ris")
     let image = document.getElementById("image")
     let url = 'https://api.openweathermap.org/data/2.5/weather?q='+ città + '&appid=' +apikey;
